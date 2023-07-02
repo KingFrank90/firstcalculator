@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+    
+.cal-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: rgba(117, 49, 49, 0.836);
+    width: 100%;
+    max-width: 400px;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.container h2{
+    text-align: center;
+}
+.display{
+    min-height: 150px;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-end;
+    color:azure;
+    text-align: right;
+    flex: 1 1 0%;
+    background-color: rgba(110, 56, 56, 0.836);
+}
+.display .input{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.display .output{
+    font-size: 48px;
+    font-weight: 650;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+.numpad {
+    margin-top: 20px;
+    background-color: rgb(29, 8, 8);
+    padding: 16px;
+    border-radius: 24px 24px 0 0;
+    display: flex;
+    height:40vh;
+}
+.num-keys{
+    width: 900px;
+    display: grid;
+    grid-template-columns: 70px 70px 85px 1fr 70px;
+    grid-template-rows: 50px 50px 50px;
+    margin-top: 50px;
+    
+}
+
+.num-keys .keys{
+    width: 70px;
+    height:50px;
+    margin-bottom: 5px;
+    font-size: 30px; 
+    background-color: rgba(110, 56, 56, 0.836);
+    color: azure;
+    bottom: auto;
+}
+.operator-keys{
+    width: 400px;
+}
+.operator-keys .ackey, .operator-keys .opkeys{
+    width: 60px;
+    height:50px;
+    margin-bottom: 1px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: crimson;
+    background-color:rgb(167, 96, 96);
+}
+.operator-keys .opkeysequals{
+    width: 124px;
+    height: 50px;
+}
